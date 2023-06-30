@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    --var-primary-dark: #161616;
+    --var-secondary-dark: #292828;
+    --var-text-color: #a5a5a5;
+}
+body{
+    background-color: var(--var-primary-dark);
+}
+#container{
+    padding: 1rem;
+    margin: 0 6rem;
+    background-color: var(--var-primary-dark);
+    color: var(--var-text-color);
+}
+a{
+    color:var(--var-text-color);
+    text-decoration: none;
+}
+nav{
+    padding: 0 0 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--var-secondary-dark);
+    margin-bottom: 4rem;
+}
+.email{
+    display:flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--var-text-color); 
+    background-color:var(--var-secondary-dark)
+}
+.socials{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* header */
+header{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: auto;
+}
+.hero-img > img{
+    width: 150px;
+    clip-path: circle();
+}
+header p{
+    font-size: 1rem;
+}
+header h1{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 64px;
+    font-weight: 400;
+    width: 80%;
+    padding-bottom: 3rem;
+}
+.btn{
+    background-color: var(--var-secondary-dark);
+    border: 1px solid var(--var-text-color);
+    padding: 1rem 3rem;
+    color: var(--var-text-color);
+    transition: transform 250ms;
+}
+.btn:hover{
+    transform: translateY(-5px);
+}
+.goto-icon{
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 1rem;
+    background-color: var(--var-secondary-dark);
+    color: var(--var-text-color);
+    margin-top: 2rem;
+}
+
+/* servicces */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-bottom: 1px solid var(--var-secondary-dark);
+}
+.services h2{
+    margin-top: 3rem;
+    font-size: 42px;
+    font-weight: 400;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.cards{
+    display: flex;
+    gap: 2rem;
+}
+.card{
+    background-color: var(--var-secondary-dark);
+    padding: 1rem;
+    height: 450px;
+    width: 300px;
+    text-align: center;
+}
+.card > .img{
+    font-size: 6rem;
+    align-self: flex-start;
+    text-align: center;
+    padding: 3rem;
+}
+.card > h1{
+    padding-bottom: 1rem;
+    font-weight:500 ;
+}
+
+/* connect */
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    border-bottom: 1px solid var(--var-secondary-dark);
+}
+.connect > h1{
+    font-size: 64px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.kawsar-design{
+    text-decoration: underline;
+}
