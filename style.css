@@ -54,13 +54,17 @@ nav{
     align-items: center;
     gap: 1rem;
 }
+@media screen and (max-width: 428px) {
+    nav > .socials{
+        display: none;
+    }
+}
 
 /* header */
 header{
     margin: 0 auto;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
     padding: 1rem;
     flex-direction: column;
     align-items: center;
@@ -89,6 +93,11 @@ header h1{
     font-weight: 400;
     padding-bottom: 3rem;
 }
+@media screen and (max-width: 428px) {
+    header h1{
+        font-size: 2rem;
+    }
+}
 .btn{
     background-color: var(--var-secondary-dark);
     border: 1px solid var(--var-text-color);
@@ -114,6 +123,16 @@ header h1{
     color: var(--var-text-color);
     margin-top: 2rem;
 }
+@media screen and (max-width: 428px) {
+    .skills{
+        flex-direction: column;
+    }
+    .skills > div{
+        border-bottom: 1px solid var(--var-primary-dark);
+        width: 100%;
+        text-align: center;
+    }
+}
 
 /* servicces */
 
@@ -122,7 +141,6 @@ header h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     border-bottom: 1px solid var(--var-secondary-dark);
 }
 .services h2{
@@ -135,10 +153,21 @@ header h1{
     text-align: center;
     padding:2rem 0;
 }
+@media screen and (max-width: 428px) {
+    .services h2{
+        font-size: 1.5rem;
+    }
+}
 .cards{
     flex-wrap: wrap;
     display: flex;
     gap: 2rem;
+    margin: 2rem 0;
+}
+@media screen and (max-width: 428px) {
+    .cards{
+        flex-direction: column;
+    }
 }
 .card{
     background-color: var(--var-secondary-dark);
@@ -147,10 +176,9 @@ header h1{
     width: 300px;
     text-align: center;
 }
-@media screen and(max-width: 1200px) {
+@media screen and (max-width: 960px) {
     .card{
-        display: flex;
-        flex-direction: column;
+        width: 250px;
     }
 }
 .card > .img{
@@ -169,8 +197,6 @@ header h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    border-bottom: 1px solid var(--var-secondary-dark);
 }
 .connect > h1{
     background: -webkit-linear-gradient(#eee, #333);
@@ -181,12 +207,24 @@ header h1{
     font-weight: 400;
     text-align: center;
     padding-bottom: 3rem;
+    margin: 3rem 0 0;
+}
+@media screen and (max-width: 428px) {
+    .connect > h1{
+        font-size: 2rem;
+    }
 }
 /* footer */
 footer{
+    margin: 3rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 428px) {
+    footer{
+        flex-direction: column;
+    }
 }
 .kawsar-design{
     text-decoration: underline;
