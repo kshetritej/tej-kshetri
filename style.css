@@ -14,8 +14,9 @@ body{
     background-color: var(--var-primary-dark);
 }
 #container{
+    width: 100%;
     padding: 1rem;
-    margin: 0 6rem;
+    margin: 0 auto;
     background-color: var(--var-primary-dark);
     color: var(--var-text-color);
 }
@@ -24,7 +25,7 @@ a{
     text-decoration: none;
 }
 nav{
-    padding: 0 0 1em 0;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,10 +57,10 @@ nav{
 
 /* header */
 header{
-    width: 50%;
     margin: 0 auto;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     padding: 1rem;
     flex-direction: column;
     align-items: center;
@@ -70,11 +71,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
     height: auto;
 }
 .hero-img > img{
-    width: 150px;
+    width: 60%;
     clip-path: circle();
 }
 header p{
@@ -83,10 +83,10 @@ header p{
 header h1{
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 400;
-    width: 80%;
     padding-bottom: 3rem;
 }
 .btn{
@@ -106,6 +106,7 @@ header h1{
 
 .skills{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     padding: 3rem 1rem;
@@ -125,14 +126,17 @@ header h1{
     border-bottom: 1px solid var(--var-secondary-dark);
 }
 .services h2{
-    margin-top: 3rem;
-    font-size: 42px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
     font-weight: 400;
-    width: 50%;
     text-align: center;
-    padding-bottom: 2rem;
+    padding:2rem 0;
 }
 .cards{
+    flex-wrap: wrap;
     display: flex;
     gap: 2rem;
 }
@@ -143,9 +147,14 @@ header h1{
     width: 300px;
     text-align: center;
 }
+@media screen and(max-width: 1200px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+}
 .card > .img{
     font-size: 6rem;
-    align-self: flex-start;
     text-align: center;
     padding: 3rem;
 }
@@ -164,7 +173,11 @@ header h1{
     border-bottom: 1px solid var(--var-secondary-dark);
 }
 .connect > h1{
-    font-size: 64px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
     font-weight: 400;
     text-align: center;
     padding-bottom: 3rem;
